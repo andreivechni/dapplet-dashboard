@@ -1,0 +1,65 @@
+@import "../../styles/vars.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.subHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.subtitle {
+  color: $grey;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.installed {
+  background-color: $secondary;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 14px;
+  color: $black2;
+}
+
+.tags {
+  display: flex;
+  gap: 4px;
+}

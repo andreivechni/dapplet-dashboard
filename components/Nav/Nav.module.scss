@@ -1,0 +1,52 @@
+@import "../../styles/vars.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(
+    180deg,
+    rgba(213, 252, 255, 0.7) 0%,
+    rgba(241, 238, 252, 0.7) 100%
+  );
+
+  backdrop-filter: blur(5px);
+
+  @media screen and (min-width: $desktop) {
+    grid-area: side;
+    top: 56px;
+    position: static;
+    width: 360px;
+    height: 100vh;
+  }
+}
+
+.item {
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: flex-end;
+  color: $black2;
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 149%;
+}
+
+.item svg {
+  stroke: $black2;
+}
+
+.active {
+  color: $primary;
+  text-shadow: 0px 0px 20px $primary;
+  border-left: 3px solid $primary;
+}
+
+.active svg {
+  stroke: $primary;
+}

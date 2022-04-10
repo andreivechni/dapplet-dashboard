@@ -1,0 +1,20 @@
+@import "../../../styles/vars.scss";
+
+.root {
+  text-transform: uppercase;
+  border: 0;
+  color: #fff;
+  background-color: $primary;
+  border-radius: 50px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.transparent {
+  //background-color: transparent;
+}
+
+.xs {
+  height: 26px;
+  width: 26px;
+}

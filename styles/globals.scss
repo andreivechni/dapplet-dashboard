@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import "./vars.scss";
+
+html,
+body {
+  color: $black;
+  font-family: "Roboto";
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+select {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 14px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.8);
+  box-shadow: 10px 10px 40px rgba(156, 185, 222, 0.36);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

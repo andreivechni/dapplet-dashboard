@@ -1,0 +1,55 @@
+@import "../../styles/vars.scss";
+
+.root {
+  @media screen and (min-width: $desktop) {
+    display: grid;
+    grid-template-rows: 56px auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "side statebar"
+      "side main";
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  grid-area: main;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  // max-height: 915px;
+  overflow: scroll;
+}
+
+.item {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    165.4deg,
+    #ffffff -10.07%,
+    rgba(255, 255, 255, 0) 89.61%
+  );
+
+  box-shadow: 0px 0px 19px 0px #9cb9de26;
+}
+
+.item .expand {
+}
